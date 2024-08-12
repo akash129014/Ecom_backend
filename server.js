@@ -37,7 +37,7 @@ app.use('/api/address',addressRouter)
 app.use('/api/payment',paymentRouter)
 
 mongoose.connect(
-  process.env.MONGO_URL,{
+  "mongodb+srv://akashagr4140:Z0aKsekrMk6m8JqU@cluster0.zucb2.mongodb.net/",{
     dbName:"MERN_E_Commerce"
   }
 ).then(()=>console.log("MongoDB Connected Succssfully...!")).catch((err)=>console.log(err));
